@@ -1,3 +1,4 @@
+import React from 'react';
 import { useState } from 'react';
 import { TextField } from '@material-ui/core';
 import { SiteButton } from '../composed/SiteButton';
@@ -5,9 +6,8 @@ import { validateInput } from '../../assets/utils/validateInput';
 import { sendFormData } from '../../assets/utils/sendFormData';
 import styles from '../../styles/Contacto.module.scss';
 
-// require('dotenv').config();
-// const formURL = process.env.REACT_APP_FORM_URL;
-
+require('dotenv').config();
+const formURL = process.env.NEXT_PUBLIC_FORM_URL;
 
 export const ContactForm = () => {
   const [fullName, setFullName] = useState('');
@@ -29,8 +29,11 @@ export const ContactForm = () => {
     if (errorChecking.isValid) {
       setErrors({});
       setTextButton('...enviando el mensaje');
-      //sendFormData(newMessage, formURL);
-      setTextButton('Mensaje enviado correctamente');
+      sendFormData(newMessage, formURL);
+
+      setTimeout(() => {
+        setTextButton('Mensaje enviado correctamente');
+      }, 1000);
 
       setTimeout(() => {
         setTextButton('contáctame');
