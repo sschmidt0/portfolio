@@ -35,11 +35,12 @@
     &:last-child {
       display: flex;
       flex-wrap: wrap;
+
+      li {
+        width: 50%;
+      }
     }
 
-    li {
-      width: 50%;
-    }
   }
 
   button > span {
