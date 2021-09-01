@@ -1,0 +1,48 @@
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-right: 10px;
+  padding-left: 10px;
+
+  @media (min-width: 600px) {
+    flex-direction: row;
+  }
+  @media (min-width: 960px) {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+
+  @media (min-width: 600px) {
+    width: 300px;
+  }
+
+  ul {
+    padding-left: 15px;
+    color: #333;
+    font-weight: 300;
+
+    &:last-child {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    li {
+      width: 50%;
+    }
+  }
+
+  button > span {
+    font-size: 10px;
+  }
+}

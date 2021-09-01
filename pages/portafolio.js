@@ -1,5 +1,10 @@
+import { ProjectsPortfolio } from '../components/composed/PortfolioComp/ProjectsPortfolio';
+
 const Portfolio = () => (
-  <h1>Portfolio</h1>
+  <section>
+    <h1>Portfolio</h1>
+    <ProjectsPortfolio />
+  </section>
 );
 
 export default Portfolio;
