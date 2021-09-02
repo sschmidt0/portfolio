@@ -235,7 +235,7 @@ CV SECTION
       }
 
       span:first-child {
-        height: 15px;
+        height: 18px;
         width: 100%;
         background-color: #fff;
       }
@@ -244,9 +244,14 @@ CV SECTION
         position: absolute;
         top: 0;
         left: 0;
-        height: 15px;
+        height: 18px;
+        padding-left: 10px;
         color: #cf81ff;
         background-color: #cf81ff;
+
+        &:hover {
+          color: #fff;
+        }
       }
     }
   }
