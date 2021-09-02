@@ -80,7 +80,37 @@ export const curriculumInfo = [
       },
     ],
   },
+];
+
+export const languages = [
   {
-    knowledge: ['React', 'Redux', 'NodeJs', 'Express', 'MongoDB', 'Material UI'],
-  }
+    id: 1,
+    language: 'Alemán',
+    percentage: '100%',
+    knowledge: 'nativa'
+  },
+  {
+    id: 2,
+    language: 'Inglés',
+    percentage: '90%',
+    knowledge: 'muy alto'
+  },
+  {
+    id: 3,
+    language: 'Castellano',
+    percentage: '90%',
+    knowledge: 'muy alto'
+  },
+  {
+    id: 4,
+    language: 'Catalán',
+    percentage: '90%',
+    knowledge: 'muy alto'
+  },
+  {
+    id: 5,
+    language: 'Italiano',
+    percentage: '70%',
+    knowledge: 'alto'
+  },
 ];
