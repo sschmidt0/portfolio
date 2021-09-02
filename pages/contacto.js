@@ -1,14 +1,25 @@
 import { ContactForm } from '../components/composed/ContactForm';
 import { ContactInfo } from '../components/composed/ContactInfo';
 import { Footer } from '../components/Footer';
+import { motion } from 'framer-motion';
+import { fadeInUp, zoomIn, stagger } from '../assets/animations/animations';
 
 const Contacto = () => (
-  <section>
+  <motion.section
+    initial="initial"
+    animate="animate"
+    exit={{ opacity: 0 }}
+    variants={ stagger }
+  >
     <h1>Contacto</h1>
-    <ContactForm />
-    <ContactInfo />
+    <motion.div variants={ zoomIn }>
+      <ContactForm />
+    </motion.div>
+    <motion.div variants={ fadeInUp }>
+      <ContactInfo />
+    </motion.div>
     <Footer />
-  </section>
+  </motion.section>
 );
 
 export default Contacto;

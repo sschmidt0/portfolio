@@ -5,6 +5,8 @@ import { SiteButton } from '../composed/SiteButton';
 import { validateInput } from '../../assets/utils/validateInput';
 import { sendFormData } from '../../assets/utils/sendFormData';
 import styles from '../../styles/Contacto.module.scss';
+import { motion } from 'framer-motion';
+import { fadeInUp, zoomIn } from '../../assets/animations/animations';
 
 require('dotenv').config();
 const formURL = process.env.NEXT_PUBLIC_FORM_URL;
@@ -93,13 +95,18 @@ export const ContactForm = () => {
         helperText={ errors.message }
       />
 
-      <SiteButton
-        text={ textButton }
-        type="submit"
-        color="secondary"
-        onClick={ (e) => handleSubmit(e) }
-        style={{ width: '100%' }}
-      />
+      <motion.div
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.95 }}
+      >
+        <SiteButton
+          text={ textButton }
+          type="submit"
+          color="secondary"
+          onClick={ (e) => handleSubmit(e) }
+          style={{ width: '100%' }}
+        />
+      </motion.div>
     </form>
   );
 };
