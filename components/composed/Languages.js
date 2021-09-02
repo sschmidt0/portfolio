@@ -22,3 +22,9 @@ export const Languages = () => (
     </ul>
   </div>
 );
+
+
+// Languages.getInitialProps = async () => {
+//   const data = languages;
+//   return { languages: data }
+// };
