@@ -13,13 +13,8 @@ a {
   box-sizing: border-box;
 }
 
-.content {
-  max-width: 960px;
-  height: 100vh;
-  margin: 0 auto;
-}
-
 h1 {
+  padding-top: 40px;
   font-size: 34px;
   text-align: center;
 
@@ -35,6 +30,7 @@ h1 {
   align-items: center;
   height: 80px;
   width: 100%;
+  margin-bottom: -32px;
   color: #fff;
   background-color: #6820ad;
   box-shadow: 0 0 1px 1px #6820ad;
@@ -118,4 +114,17 @@ h1 {
 .menu-show-exit-active {
   right: -300px;
   transition: right 500ms ease;
+}
+
+footer {
+  margin-top: 40px;
+
+  p {
+    width: 200px;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    border-top: 1px solid #cfd8dc;
+  }
 }

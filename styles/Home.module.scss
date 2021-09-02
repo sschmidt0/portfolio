@@ -1,0 +1,253 @@
+.homeContainer {
+  position: relative;
+  height: calc(100vh - 80px);
+  width: 100vw;
+
+  > * {
+    width: 100vw;
+    scroll-snap-align: start;
+    scroll-margin-top: 80px;
+  }
+}
+
+
+/******************
+
+  INTRO SECTION
+
+******************/
+
+.articleIntro {
+  height: calc(100vh - 80px);
+  margin-top: 32px;
+}
+
+
+.introContainer {
+  display: flex;
+  flex-direction: column;
+  max-width: 960px;
+  margin: 0 auto;
+
+  @media (min-width: 600px) {
+    flex-direction: row;
+  }
+
+  div {
+    @media (min-width: 600px) {
+      width: 50%;
+    }
+
+    // LEFT SITE - IMAGE
+    &:first-child {
+      position: relative;
+
+      div {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 40vh;
+        background: #cf81ff;
+        background-image: linear-gradient(#fff, #cf81ff);
+
+        @media (min-width: 600px) {
+          height: 100%;
+          background-color: inherit;
+          background-image: none;
+        }
+        & > div {
+          position: unset !important;
+        }
+
+        img {
+          object-fit: contain;
+          width: 100% !important;
+          position: relative !important;
+          height: unset !important;
+        }
+      }
+    }
+
+    // RIGHT SITE - TEXT
+    &:last-child {
+      height: calc(100vh - 80px);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-top: 20vh;
+      padding-left: 20px;
+      padding-right: 40px;
+    }
+
+    @media (min-width: 600px) {
+      margin-top: 0 !important;
+      padding-left: 0 !important;
+    }
+
+    h1 {
+      margin-bottom: 7px;
+      font-size: 28px;
+      text-align: start;
+      @media (min-width: 768px) {
+        font-size: 40px;
+      }
+    }
+
+    h2 {
+      margin-bottom: -50px;
+      font-size: 22px;
+      @media (min-width: 768px) {
+        font-size: 30px;
+      }
+    }
+
+    p {
+      font-size: 16px;
+
+      &:last-child {
+        text-align: center;
+
+        svg {
+          color: #9B51E0;
+          font-size: 70px;
+          -webkit-animation: move 0.5s infinite;
+          -moz-animation: move 0.5s infinite;
+          animation: move 0.5s infinite;
+          animation-direction: alternate;
+
+          @keyframes move { 100% { top: 7px; }}
+          @-webkit-keyframes move { 100% { top: 7px; }}
+          @-moz-keyframes move { 100% { top: 7px; }}
+        }
+      }
+    }
+
+    span {
+      font-size: 20px;
+      color: #9B51E0;
+      @media (max-width: 600px) {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+
+
+/******************
+
+  ABOUT SECTION
+
+******************/
+
+.articleAbout {
+  height: 100vh;
+  color: #fff;
+  background-image: linear-gradient(#cf81ff, #6820ad);
+
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 92%;
+  }
+
+  h2 {
+    font-size: 30px;
+
+    @media (min-width: 768px) {
+      font-size: 40px;
+    }
+  }
+
+  p {
+    width: 70%;
+    font-size: 14px;
+    line-height: 1.7em;
+
+    @media (min-width: 768px) {
+      width: 60%;
+      font-size: 16px;
+    }
+  }
+}
+
+
+
+/******************
+
+CV SECTION
+
+******************/
+
+.articleCV {
+  max-width: 960px;
+  height: 85vh;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: 960px) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  h2 {
+    padding-top: 50px;
+    color: #9B51E0;
+    font-size: 32px;
+    text-align: center;
+
+    @media (min-width: 600px) {
+      font-size: 40px;
+    }
+  }
+}
+
+.languageContainer {
+  max-width: 400px;
+  padding: 30px;
+  color: #fff;
+  background-color: #9B51E0;
+  border-radius: 10px;
+
+  h3 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    list-style-type: none;
+
+    div {
+      position: relative;
+      margin-top: 5px;
+      margin-bottom: 12px;
+
+      span {
+        display: block;
+        border-radius: 5px;
+      }
+
+      span:first-child {
+        height: 15px;
+        width: 100%;
+        background-color: #fff;
+      }
+
+      span:last-child {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 15px;
+        color: #cf81ff;
+        background-color: #cf81ff;
+      }
+    }
+  }
+}
