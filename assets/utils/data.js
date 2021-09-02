@@ -87,30 +87,30 @@ export const languages = [
     id: 1,
     language: 'Alemán',
     percentage: '100%',
-    knowledge: 'nativa'
+    knowledge: 'Lengua materna'
   },
   {
     id: 2,
     language: 'Inglés',
     percentage: '90%',
-    knowledge: 'muy alto'
+    knowledge: 'Competencia profesional completa'
   },
   {
     id: 3,
     language: 'Castellano',
     percentage: '90%',
-    knowledge: 'muy alto'
+    knowledge: 'Competencia profesional completa'
   },
   {
     id: 4,
     language: 'Catalán',
     percentage: '90%',
-    knowledge: 'muy alto'
+    knowledge: 'Competencia profesional completa'
   },
   {
     id: 5,
     language: 'Italiano',
     percentage: '70%',
-    knowledge: 'alto'
+    knowledge: 'Competencia profesional media'
   },
 ];
