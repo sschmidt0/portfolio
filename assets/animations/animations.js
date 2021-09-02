@@ -31,4 +31,17 @@ export const zoomIn = {
     opacity: 1,
     transition: { duration: 0.6, ease: easing }
   }
+};
+
+export const menuOpenClose = {
+  open: {
+    opacity: 1,
+    right: 0,
+    transition: { duration: 0.6, ease: easing }
+  },
+  closed: {
+    opacity: 0,
+    right: -300,
+    transition: { duration: 0.6, ease: easing }
+  },
 }
