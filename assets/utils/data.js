@@ -48,37 +48,39 @@ export const projects = [
 
 export const curriculumInfo = [
   {
-    'work': [
+    work: [
       {
-        'title': 'Data Modeler',
-        'companies': [
+        id: 1,
+        title: 'Data Modeler',
+        companies: [
           {
-            'name': 'M47 Labs',
-            'years': '2019 - actualidad',
+            name: 'M47 Labs',
+            years: '2019 - actualidad',
           }
         ],
-        'description': [
+        description: [
           'Responsabilidad principal: centrarse en los aspectos internacionales de un software de asistente de voz',
           'Interacción con el equipo de pruebas internacionales e ingenieros para ayudar a reproducir problemas y probar características',
         ]
       },
       {
-        'title': 'Profesora de lenguas',
-        'companies': [
+        id: 2,
+        title: 'Profesora de lenguas',
+        companies: [
           {
-            'name': 'Universitat de Barcelona',
-            'years': '2013 - 2019'
+            name: 'Universitat de Barcelona',
+            years: '2013 - 2019'
           },
           {
-            'name': 'Universitat Oberta de Catalunya',
-            'years': '2017 - 2018'
+            name: 'Universitat Oberta de Catalunya',
+            years: '2017 - 2018'
           },
           {
-            'name':'ESCI-UPF',
-            'years': '2014-2017'
+            name:'ESCI-UPF',
+            years: '2014-2017'
           }
         ],
-        'description': [
+        description: [
           'Diseño e impartición de formación',
           'Desarrollo de recursos didácticos',
           'Atención y asesoramiento al cliente online y presencial',
@@ -88,12 +90,13 @@ export const curriculumInfo = [
     ]
   },
   {
-    'studies': [
+    studies: [
       {
-        'center': 'Universitat Oberta de Catalunya',
-        'years': '2018 - 2021',
-        'title': 'Máster universitario en Aplicaciones Multimedia',
-        'description': [
+        id: 1,
+        center: 'Universitat Oberta de Catalunya',
+        years: '2018 - 2021',
+        title: 'Máster universitario en Aplicaciones Multimedia',
+        description: [
           'MERN: MongoDB, Express, React, Nodejs',
           'HTML5, CSS3, Sass, ITCSS, BEM, Bootstrap',
           'JavaScript ES6, jQuery',
@@ -109,22 +112,43 @@ export const curriculumInfo = [
         ]
       },
       {
-        'center': 'Universitat Autònoma de Barcelona',
-        'years': '2009 - 2013',
-        'title': 'Doctorado en Filología Española',
-        'description': []
+        id: 2,
+        center: 'edX',
+        years: '2020',
+        title: 'Introduction to Web accessibility',
+        description: [
+          '¿Qué es la accesibilidad web?',
+          'Personas y tecnología digital',
+          'Casos de negocio y beneficios',
+          'Principios, estándares y comprobaciones',
+          'Introducción a la accesibilidad en una empresa'
+        ]
       },
       {
-        'center': 'Universitat Autònoma de Barcelona',
-        'years': '2008 - 2009',
-        'title': 'Máster universitari en TICOM',
-        'description': []
+        id: 3,
+        center: 'Universitat Autònoma de Barcelona',
+        years: '2009 - 2013',
+        title: 'Doctorado en Filología Española',
+        description: [
+          'Próxemica y comunicación intercultural: la comunicación no verbal en la enseñanza de E/LE'
+        ]
       },
       {
-        'center': 'Universität Duisburg-Essen',
-        'years': '2004 - 2008',
-        'title': 'Filología Inglesa y Filología Española',
-        'description': []
+        center: 'Universitat Autònoma de Barcelona',
+        years: '2008 - 2009',
+        title: 'Máster universitari en TICOM',
+        description: [
+          'Tratamiento de la información y comunicación multilingüe'
+        ]
+      },
+      {
+        id: 4,
+        center: 'Universität Duisburg-Essen (Alemania)',
+        years: '2004 - 2008',
+        title: 'Filología Inglesa y Filología Española',
+        description: [
+          'Lingüística, literatura y didáctica'
+        ]
       },
     ],
   },
