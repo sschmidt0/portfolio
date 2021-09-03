@@ -44,4 +44,4 @@ export const menuOpenClose = {
     right: -300,
     transition: { duration: 0.6, ease: easing }
   },
-}
+};
