@@ -10,6 +10,23 @@
   }
 }
 
+.arrow {
+  font-size: 16px;
+  text-align: center;
+
+  svg {
+    font-size: 70px;
+    -webkit-animation: move 0.5s infinite;
+    -moz-animation: move 0.5s infinite;
+    animation: move 0.5s infinite;
+    animation-direction: alternate;
+
+    @keyframes move { 100% { top: 7px; }}
+    @-webkit-keyframes move { 100% { top: 7px; }}
+    @-moz-keyframes move { 100% { top: 7px; }}
+  }
+}
+
 
 /******************
 
@@ -99,27 +116,6 @@
       font-size: 22px;
       @media (min-width: 768px) {
         font-size: 30px;
-      }
-    }
-
-    p {
-      font-size: 16px;
-
-      &:last-child {
-        text-align: center;
-
-        svg {
-          color: #9B51E0;
-          font-size: 70px;
-          -webkit-animation: move 0.5s infinite;
-          -moz-animation: move 0.5s infinite;
-          animation: move 0.5s infinite;
-          animation-direction: alternate;
-
-          @keyframes move { 100% { top: 7px; }}
-          @-webkit-keyframes move { 100% { top: 7px; }}
-          @-moz-keyframes move { 100% { top: 7px; }}
-        }
       }
     }
 
