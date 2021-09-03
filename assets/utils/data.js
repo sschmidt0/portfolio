@@ -1,5 +1,5 @@
 export const about = {
-  text: `Con un máster universitario en Aplicaciones Multimedia de la UOC y un certificado de Frontend con React de la IT Academy del Cibernàrium. Con sólidos conocimientos en React, Redux, JavaScript ES6, HTML5 y CSS3. Conocimientos también en NodeJs, Express, MongoDB y la creación de una API REST. Desarrollo de una aplicación web progresiva con el fullstack MERN como trabajo final de máster. Busco adquirir experiencia laboral como desarrolladora frontend con React.`,
+  text: `Con un máster universitario en Aplicaciones Multimedia de la UOC y un certificado de Frontend con React de la IT Academy del Cibernàrium. Con sólidos conocimientos en React, Nextjs, Redux, JavaScript ES6, HTML5 y CSS3. Conocimientos también en NodeJs, Express, MongoDB y la creación de una API REST. Desarrollo de una aplicación web progresiva con el fullstack MERN como trabajo final de máster. Busco adquirir experiencia laboral como desarrolladora frontend con React.`,
 };
 
 export const projects = [
@@ -48,33 +48,81 @@ export const projects = [
 
 export const curriculumInfo = [
   {
-    'work': {
-
-    }
+    'work': [
+      {
+        'title': 'Data Modeler',
+        'companies': [
+          {
+            'name': 'M47 Labs',
+            'years': '2019 - actualidad',
+          }
+        ],
+        'description': [
+          'Responsabilidad principal: centrarse en los aspectos internacionales de un software de asistente de voz',
+          'Interacción con el equipo de pruebas internacionales e ingenieros para ayudar a reproducir problemas y probar características',
+        ]
+      },
+      {
+        'title': 'Profesora de lenguas',
+        'companies': [
+          {
+            'name': 'Universitat de Barcelona',
+            'years': '2013 - 2019'
+          },
+          {
+            'name': 'Universitat Oberta de Catalunya',
+            'years': '2017 - 2018'
+          },
+          {
+            'name':'ESCI-UPF',
+            'years': '2014-2017'
+          }
+        ],
+        'description': [
+          'Diseño e impartición de formación',
+          'Desarrollo de recursos didácticos',
+          'Atención y asesoramiento al cliente online y presencial',
+          'Análisis de material y mejora en los procedimientos internos',
+        ]
+      },
+    ]
   },
   {
     'studies': [
       {
-        'university': 'Universitat Oberta de Catalunya',
-        'year': '2018 - 2021',
+        'center': 'Universitat Oberta de Catalunya',
+        'years': '2018 - 2021',
         'title': 'Máster universitario en Aplicaciones Multimedia',
-        'description': []
+        'description': [
+          'MERN: MongoDB, Express, React, Nodejs',
+          'HTML5, CSS3, Sass, ITCSS, BEM, Bootstrap',
+          'JavaScript ES6, jQuery',
+          'MySQL, PHP (básico)',
+          'Wordpress',
+          'Aplicación web progresiva (PWA)',
+          'Creación de una API REST',
+          'Diseño de interfaces interactivas',
+          'Analítica web: estrategias de SEO',
+          'Accesibilidad Web',
+          'Metodologías ágiles, SCRUM',
+          'Proyecto final: aplicación web progresiva con el fullstack MERN',
+        ]
       },
       {
-        'university': 'Universitat Autònoma de Barcelona',
-        'year': '2009 - 2013',
+        'center': 'Universitat Autònoma de Barcelona',
+        'years': '2009 - 2013',
         'title': 'Doctorado en Filología Española',
         'description': []
       },
       {
-        'university': 'Universitat Autònoma de Barcelona',
-        'year': '2008 - 2009',
+        'center': 'Universitat Autònoma de Barcelona',
+        'years': '2008 - 2009',
         'title': 'Máster universitari en TICOM',
         'description': []
       },
       {
-        'university': 'Universität Duisburg-Essen',
-        'year': '2004 - 2008',
+        'center': 'Universität Duisburg-Essen',
+        'years': '2004 - 2008',
         'title': 'Filología Inglesa y Filología Española',
         'description': []
       },
