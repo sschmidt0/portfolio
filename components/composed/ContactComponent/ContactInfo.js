@@ -1,5 +1,5 @@
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
-import styles from '../../styles/Contacto.module.scss';
+import styles from '../../../styles/Contacto.module.scss';
 
 export const ContactInfo = () => (
   <div className={ styles.infobox }>

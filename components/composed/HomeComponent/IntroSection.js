@@ -1,10 +1,10 @@
 import { useEffect } from 'react';
-import styles from '../../styles/Home.module.scss';
-import { DynamicText } from './DynamicText';
+import styles from '../../../styles/Home.module.scss';
+import { DynamicText } from '../DynamicText';
 import Image from 'next/image';
-import { ContinueArrow } from './ContinueArrow';
+import { ContinueArrow } from '../ContinueArrow';
 import { motion, useAnimation } from "framer-motion";
-import { stagger, zoomIn, fadeInLeft } from '../../assets/animations/animations';
+import { stagger, zoomIn, fadeInLeft } from '../../../assets/animations/animations';
 import { useInView } from 'react-intersection-observer';
 
 export const IntroSection = () => {

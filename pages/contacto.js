@@ -1,5 +1,5 @@
-import { ContactForm } from '../components/composed/ContactForm';
-import { ContactInfo } from '../components/composed/ContactInfo';
+import { ContactForm } from '../components/composed/ContactComponent/ContactForm';
+import { ContactInfo } from '../components/composed/ContactComponent/ContactInfo';
 import { Footer } from '../components/Footer';
 import { motion } from 'framer-motion';
 import { fadeInUp, zoomIn, stagger } from '../assets/animations/animations';

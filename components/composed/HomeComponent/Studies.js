@@ -1,8 +1,8 @@
 import { useEffect } from 'react';
-import { curriculumInfo } from '../../assets/utils/data';
-import styles from '../../styles/Home.module.scss';
+import { curriculumInfo } from '../../../assets/utils/data';
+import styles from '../../../styles/Home.module.scss';
 import { motion, useAnimation } from "framer-motion";
-import { fadeInUp } from '../../assets/animations/animations';
+import { fadeInUp } from '../../../assets/animations/animations';
 import { useInView } from 'react-intersection-observer';
 
 export const Studies = () => {

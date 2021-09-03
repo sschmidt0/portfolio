@@ -1,5 +1,5 @@
-import { curriculumInfo } from '../../assets/utils/data';
-import styles from '../../styles/Home.module.scss';
+import { curriculumInfo } from '../../../assets/utils/data';
+import styles from '../../../styles/Home.module.scss';
 
 
 export const ProfessionalExperience = () => {

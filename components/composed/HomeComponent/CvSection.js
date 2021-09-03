@@ -1,10 +1,10 @@
 import { useEffect } from 'react';
-import styles from '../../styles/Home.module.scss';
+import styles from '../../../styles/Home.module.scss';
 import { Studies } from './Studies';
 import { ProfessionalExperience } from './ProfessionalExperience';
 import { Languages } from './Languages';
 import { motion, useAnimation } from "framer-motion";
-import { fadeInUp } from '../../assets/animations/animations';
+import { fadeInUp } from '../../../assets/animations/animations';
 import { useInView } from 'react-intersection-observer';
 
 export const CvSection = () => {

@@ -1,10 +1,10 @@
 import { useEffect } from 'react';
-import styles from '../../styles/Home.module.scss';
-import { about } from '../../assets/utils/data';
+import styles from '../../../styles/Home.module.scss';
+import { about } from '../../../assets/utils/data';
 import { motion, useAnimation } from "framer-motion";
-import { zoomIn } from '../../assets/animations/animations';
+import { zoomIn } from '../../../assets/animations/animations';
 import { useInView } from 'react-intersection-observer';
-import { ContinueArrow } from './ContinueArrow';
+import { ContinueArrow } from '../ContinueArrow';
 
 export const AboutSection = () => {
   const controls = useAnimation();
