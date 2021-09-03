@@ -1,4 +1,4 @@
-import { ProjectsPortfolio } from '../components/composed/PortfolioComp/ProjectsPortfolio';
+import { ProjectsPortfolio } from '../components/composed/PortfolioComponent/ProjectsPortfolio';
 import { Footer } from '../components/Footer';
 
 const Portfolio = () => (

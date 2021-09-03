@@ -1,5 +1,5 @@
-import styles from '../../styles/Home.module.scss';
-import { languages } from '../../assets/utils/data';
+import styles from '../../../styles/Home.module.scss';
+import { languages } from '../../../assets/utils/data';
 
 export const Languages = () => (
   <div className={ styles.languageContainer }>

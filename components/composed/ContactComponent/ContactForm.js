@@ -1,12 +1,12 @@
 import React from 'react';
 import { useState } from 'react';
 import { TextField } from '@material-ui/core';
-import { SiteButton } from '../composed/SiteButton';
-import { validateInput } from '../../assets/utils/validateInput';
-import { sendFormData } from '../../assets/utils/sendFormData';
-import styles from '../../styles/Contacto.module.scss';
+import { SiteButton } from '../SiteButton';
+import { validateInput } from '../../../assets/utils/validateInput';
+import { sendFormData } from '../../../assets/utils/sendFormData';
+import styles from '../../../styles/Contacto.module.scss';
 import { motion } from 'framer-motion';
-import { fadeInUp, zoomIn } from '../../assets/animations/animations';
+import { fadeInUp, zoomIn } from '../../../assets/animations/animations';
 
 require('dotenv').config();
 const formURL = process.env.NEXT_PUBLIC_FORM_URL;
