@@ -1,6 +1,7 @@
 import { curriculumInfo } from '../../assets/utils/data';
 import styles from '../../styles/Home.module.scss';
 
+
 export const ProfessionalExperience = () => {
   const work = curriculumInfo[0].work;
 

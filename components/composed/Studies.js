@@ -1,11 +1,32 @@
+import { useEffect } from 'react';
 import { curriculumInfo } from '../../assets/utils/data';
 import styles from '../../styles/Home.module.scss';
+import { motion, useAnimation } from "framer-motion";
+import { fadeInUp } from '../../assets/animations/animations';
+import { useInView } from 'react-intersection-observer';
 
 export const Studies = () => {
   const studies = curriculumInfo[1].studies;
+  const controls = useAnimation();
+  const { ref, inView } = useInView();
+
+  useEffect(() => {
+    if (inView) {
+      controls.start('animate');
+    }
+    if (!inView) {
+      controls.start('initial');
+    }
+  }, [controls, inView]);
 
   return (
-    <section className={ `${styles.studiesExperienceContainer} ${styles.cvInnerContainer}` }>
+    <motion.section
+      className={ `${styles.studiesExperienceContainer} ${styles.cvInnerContainer}` }
+      initial="initial"
+      animate={ controls }
+      variants={ fadeInUp }
+      ref={ ref }
+    >
       <h3>Formación y cursos</h3>
       <ul>
         {
@@ -32,6 +53,6 @@ export const Studies = () => {
           })
         }
       </ul>
-    </section>
+    </motion.section>
   );
 };
