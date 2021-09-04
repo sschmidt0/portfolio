@@ -113,6 +113,21 @@ export const curriculumInfo = [
       },
       {
         id: 2,
+        center: 'IT Academy, Barcelona Activa',
+        years: '2021',
+        title: 'Frontend con React',
+        description: [
+          'HTML5, CSS3, Bootstrap, Sass',
+          'JavaScript ES6',
+          'DevTools',
+          'Git',
+          'API REST',
+          'React',
+          'Testing',
+        ]
+      },
+      {
+        id: 3,
         center: 'edX',
         years: '2020',
         title: 'Introduction to Web accessibility',
@@ -125,7 +140,7 @@ export const curriculumInfo = [
         ]
       },
       {
-        id: 3,
+        id: 4,
         center: 'Universitat Autònoma de Barcelona',
         years: '2009 - 2013',
         title: 'Doctorado en Filología Española',
@@ -134,6 +149,7 @@ export const curriculumInfo = [
         ]
       },
       {
+        id: 5,
         center: 'Universitat Autònoma de Barcelona',
         years: '2008 - 2009',
         title: 'Máster universitari en TICOM',
@@ -142,7 +158,7 @@ export const curriculumInfo = [
         ]
       },
       {
-        id: 4,
+        id: 6,
         center: 'Universität Duisburg-Essen (Alemania)',
         years: '2004 - 2008',
         title: 'Filología Inglesa y Filología Española',
