@@ -30,7 +30,7 @@ export const projects = [
     title: 'Portafolio',
     subtitle: 'Portafolio con el CV de la autora y proyectos suyos',
     image: 'portfolio.png',
-    linkSite: 'https://www.sarahschmidt.es',
+    linkSite: 'https://portfolio-sarah-schmidt-portfolio.vercel.app',
     linkGithub: ['https://github.com/sschmidt0/portfolio'],
     information: ['React CSS Transition', 'Formulario funcional'],
     tecnologies: ['React', 'Nextjs', 'Material UI'],
