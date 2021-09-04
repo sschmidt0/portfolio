@@ -6,6 +6,7 @@ export const projects = [
   {
     index: 1,
     title: 'entrenem',
+    extraInfo: ' (en proceso de mejora)',
     subtitle: 'Proyecto final del Máster Universitario en Aplicaciones Multimedia',
     image: 'entrenem.png',
     imageTitle: 'Captura de pantalla de entrenem',

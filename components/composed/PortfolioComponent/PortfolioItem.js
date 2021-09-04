@@ -13,7 +13,18 @@ import { fadeInUp } from '../../../assets/animations/animations';
 import { useInView } from 'react-intersection-observer';
 
 export const PortfolioItem = ({ project }) => {
-  const { title, subtitle, image, imageTitle, linkSite, information, tecnologies, linkGithub, index } = project;
+  const {
+    title,
+    extraInfo,
+    subtitle,
+    image,
+    imageTitle,
+    linkSite,
+    information,
+    tecnologies,
+    linkGithub,
+    index
+  } = project;
   const controls = useAnimation();
   const { ref, inView } = useInView();
 
@@ -55,7 +66,7 @@ export const PortfolioItem = ({ project }) => {
             />
           </div>
             <CardContent>
-              <h2>{ title }</h2>
+              { extraInfo ? <h2>{ title }<span>{ extraInfo }</span></h2> : <h2>{ title }</h2> }
               <h4>{ subtitle }</h4>
               <List listArray={ information } />
               <h4>Tecnologías utilizadas</h4>
