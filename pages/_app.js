@@ -1,15 +1,27 @@
 import { useEffect } from 'react';
+import { useRouter } from 'next/router';
+import * as gtag from '../lib/gtag';
 import '../styles/globals.scss';
 import PropTypes from 'prop-types';
 import Head from 'next/head';
 import Layout from '../components/Layout';
-
 import { ThemeProvider } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import { theme } from '../assets/theme/theme';
 
 
 const MyApp = ({ Component, pageProps }) => {
+  const router = useRouter();
+
+  useEffect(() => {
+    const handleRouteChange = (url) => {
+      gtag.pageview(url)
+    }
+    router.events.on('routeChangeComplete', handleRouteChange)
+    return () => {
+      router.events.off('routeChangeComplete', handleRouteChange)
+    }
+  }, [router.events]);
 
   useEffect(() => {
     // Remove the server-side injected CSS.
