@@ -33,7 +33,7 @@ export const projects = [
     image: 'portfolio.png',
     linkSite: 'https://portfolio-sarah-schmidt-portfolio.vercel.app',
     linkGithub: ['https://github.com/sschmidt0/portfolio'],
-    information: ['React CSS Transition', 'Formulario funcional'],
+    information: ['Framer Motion', 'Formulario funcional'],
     tecnologies: ['React', 'Nextjs', 'Material UI'],
   },
   {
