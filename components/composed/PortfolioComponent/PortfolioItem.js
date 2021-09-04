@@ -17,6 +17,8 @@ export const PortfolioItem = ({ project }) => {
   const controls = useAnimation();
   const { ref, inView } = useInView();
 
+  console.log(linkGithub);
+
   const handleClick = (target) => {
     linkSite && window.open (target, '_ blank');
   };
