@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import styles from '../../../styles/Portfolio.module.scss';
 import { BsCodeSlash } from 'react-icons/bs';
 import Image from 'next/image';
@@ -7,34 +8,50 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import { List } from './List';
-import { motion } from "framer-motion";
+import { motion, useAnimation } from 'framer-motion';
 import { fadeInUp } from '../../../assets/animations/animations';
+import { useInView } from 'react-intersection-observer';
 
 export const PortfolioItem = ({ project }) => {
   const { title, subtitle, image, imageTitle, linkSite, information, tecnologies, linkGithub, index } = project;
+  const controls = useAnimation();
+  const { ref, inView } = useInView();
 
   const handleClick = (target) => {
-    window.open (target, '_ blank');
+    linkSite && window.open (target, '_ blank');
   };
+
+  useEffect(() => {
+    if (inView) {
+      controls.start('animate');
+    }
+    if (!inView) {
+      controls.start('initial');
+    }
+  }, [controls, inView]);
+
 
   return (
     <motion.div
+      className={ styles.project }
+      whileHover={{ scale: 1.03 }}
+      initial="initial"
+      animate={ controls }
       variants={ fadeInUp }
-      whileHover={{ scale: 1.05 }}
-      whileTap={{ scale: 0.95 }}
+      ref={ ref }
     >
-      <Card className={ styles.project }>
+      <Card>
         <div>
           <CardActionArea onClick={ () => handleClick(linkSite) }>
-            {
-              image &&
-              <Image
-                src={ `/${image}` }
-                height="180"
-                width="300"
-                alt={ imageTitle }
-              />
-            }
+          <div style={{ textAlign: 'center' }}>
+            <Image
+              src={ `/${image}` }
+              height="180"
+              width="300"
+              alt={ imageTitle }
+
+            />
+          </div>
             <CardContent>
               <h2>{ title }</h2>
               <h4>{ subtitle }</h4>
