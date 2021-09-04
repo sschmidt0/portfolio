@@ -6,7 +6,6 @@ import { validateInput } from '../../../assets/utils/validateInput';
 import { sendFormData } from '../../../assets/utils/sendFormData';
 import styles from '../../../styles/Contacto.module.scss';
 import { motion } from 'framer-motion';
-import { fadeInUp, zoomIn } from '../../../assets/animations/animations';
 
 require('dotenv').config();
 const formURL = process.env.NEXT_PUBLIC_FORM_URL;
@@ -17,6 +16,7 @@ export const ContactForm = () => {
   const [message, setMessage] = useState('');
   const [errors, setErrors] = useState({});
   const [textButton, setTextButton] = useState('contáctame');
+  const [buttonColor, setButtonColor] = useState('#9B51E0');
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -31,14 +31,17 @@ export const ContactForm = () => {
     if (errorChecking.isValid) {
       setErrors({});
       setTextButton('...enviando el mensaje');
+      setButtonColor('#FF8C00');
       sendFormData(newMessage, formURL);
 
       setTimeout(() => {
-        setTextButton('Mensaje enviado correctamente');
+        setTextButton('Mensaje enviado correctamente  :-)');
+        setButtonColor('#008000');
       }, 1000);
 
       setTimeout(() => {
         setTextButton('contáctame');
+        setButtonColor('#9B51E0');
         setFullName('');
         setEmail('');
         setMessage('');
@@ -104,7 +107,7 @@ export const ContactForm = () => {
           type="submit"
           color="secondary"
           onClick={ (e) => handleSubmit(e) }
-          style={{ width: '100%' }}
+          style={{ width: '100%', backgroundColor: buttonColor }}
         />
       </motion.div>
     </form>

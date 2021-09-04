@@ -49,7 +49,7 @@ export const IntroSection = () => {
             <h2>Sarah Schmidt</h2>
             <h1>Desarrolladora Frontend con React</h1>
             <p>Conocimientos de <DynamicText /></p>
-          <ContinueArrow colorHash="#9B51E0" />
+            <ContinueArrow colorHash="#9B51E0" />
         </motion.div>
       </div>
     </motion.article>
