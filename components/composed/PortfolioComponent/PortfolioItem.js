@@ -29,7 +29,7 @@ export const PortfolioItem = ({ project }) => {
   const { ref, inView } = useInView();
 
   const handleClick = (target) => {
-    linkSite && window.open (target, '_ blank');
+    target !== undefined && window.open (target, '_ blank');
   };
 
   useEffect(() => {
