@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { useRouter } from 'next/router';
 import styles from '../../../styles/Home.module.scss';
 import { Studies } from './Studies';
 import { ProfessionalExperience } from './ProfessionalExperience';
@@ -10,6 +11,8 @@ import { useInView } from 'react-intersection-observer';
 export const CvSection = () => {
   const controls = useAnimation();
   const { ref, inView } = useInView();
+  const router = useRouter();
+  const title = router.locale === 'en' ? 'Curriculum Vitae' : 'Currículum Vitae';
 
   useEffect(() => {
     if (inView) {
@@ -22,7 +25,7 @@ export const CvSection = () => {
 
   return (
     <article className={ styles.articleCV }>
-      <h2>Currículum Vitae</h2>
+      <h2>{ title }</h2>
       <div className={ styles.cvContainer }>
         <Studies />
         <motion.div

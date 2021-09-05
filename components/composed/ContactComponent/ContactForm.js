@@ -1,5 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
+import { useRouter } from 'next/router';
 import { TextField } from '@material-ui/core';
 import { SiteButton } from '../SiteButton';
 import { validateInput } from '../../../assets/utils/validateInput';
@@ -11,11 +12,19 @@ require('dotenv').config();
 const formURL = process.env.NEXT_PUBLIC_FORM_URL;
 
 export const ContactForm = () => {
+  const router = useRouter();
+  const placeHolderFullName = router.locale === 'en' ? 'Name' : 'Nombre';
+  const placeHolderEmail = router.locale === 'en' ? 'Email' : 'Correo electrónico';
+  const placeHolderMessage = router.locale === 'en' ? 'Message' : 'Mensaje';
+  const buttonInitialText = router.locale === 'en' ? 'Contact me' : 'Contáctame';
+  const buttonSendingText = router.locale === 'en' ? '...sending message' : '...enviando el mensaje';
+  const buttonSendText = router.locale === 'en' ? 'Message send correctly  :-)' : 'Mensaje enviado correctamente  :-)';
+
   const [fullName, setFullName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [errors, setErrors] = useState({});
-  const [textButton, setTextButton] = useState('contáctame');
+  const [textButton, setTextButton] = useState(buttonInitialText);
   const [buttonColor, setButtonColor] = useState('#9B51E0');
 
   const handleSubmit = (e) => {
@@ -30,17 +39,17 @@ export const ContactForm = () => {
     if (!errorChecking.isValid) setErrors(errorChecking.errors);
     if (errorChecking.isValid) {
       setErrors({});
-      setTextButton('...enviando el mensaje');
+      setTextButton(buttonSendingText);
       setButtonColor('#FF8C00');
       sendFormData(newMessage, formURL);
 
       setTimeout(() => {
-        setTextButton('Mensaje enviado correctamente  :-)');
+        setTextButton(buttonSendText);
         setButtonColor('#008000');
       }, 1000);
 
       setTimeout(() => {
-        setTextButton('contáctame');
+        setTextButton(buttonInitialText);
         setButtonColor('#9B51E0');
         setFullName('');
         setEmail('');
@@ -58,7 +67,7 @@ export const ContactForm = () => {
         fullWidth
         color="secondary"
         id="name"
-        label="Nombre"
+        label={ placeHolderFullName }
         name="name"
         autoComplete="text"
         value={ fullName }
@@ -74,7 +83,7 @@ export const ContactForm = () => {
         fullWidth
         color="secondary"
         id="email"
-        label="Correo electrónico"
+        label={ placeHolderEmail }
         name="email"
         autoComplete="email"
         value={ email }
@@ -84,7 +93,7 @@ export const ContactForm = () => {
       />
       <TextField
         id="filled-multiline-static"
-        label="Mensaje"
+        label={ placeHolderMessage }
         multiline
         fullWidth
         color="secondary"

@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
+import { useRouter } from 'next/router';
 import styles from '../../../styles/Home.module.scss';
-import { languages } from '../../../assets/utils/data';
+import { languages, languagesEnglish } from '../../../assets/utils/data';
 import { motion, useAnimation } from "framer-motion";
 import { zoomIn } from '../../../assets/animations/animations';
 import { useInView } from 'react-intersection-observer';
@@ -8,6 +9,9 @@ import { useInView } from 'react-intersection-observer';
 export const Languages = () => {
   const controls = useAnimation();
   const { ref, inView } = useInView();
+  const router = useRouter();
+  const title = router.locale === 'en' ? 'Languages' : 'Lenguas';
+  const data = router.locale === 'en' ? languagesEnglish : languages;
 
   useEffect(() => {
     if (inView) {
@@ -20,10 +24,10 @@ export const Languages = () => {
 
   return (
     <div className={ styles.languageContainer }>
-      <h3>Lenguas</h3>
+      <h3>{ title }</h3>
       <ul>
         {
-          languages.map(language => {
+          data.map(language => {
             return (
               <li key={ language.id }>
                 <span>{ language.language }</span>

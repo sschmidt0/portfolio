@@ -1,13 +1,16 @@
-import { curriculumInfo } from '../../../assets/utils/data';
+import { useRouter } from 'next/router';
+import { curriculumInfo, curriculumInfoEnglish } from '../../../assets/utils/data';
 import styles from '../../../styles/Home.module.scss';
 
 
 export const ProfessionalExperience = () => {
-  const work = curriculumInfo[0].work;
+  const router = useRouter();
+  const title = router.locale === 'en' ? 'Professional experience' : 'Experiencia profesional';
+  const work = router.locale === 'en' ? curriculumInfoEnglish[0].work : curriculumInfo[0].work;
 
   return (
     <section className={ styles.studiesExperienceContainer }>
-      <h3>Experiencia Profesional</h3>
+      <h3>{ title }</h3>
       <ul>
         {
           work.map(workItem => {

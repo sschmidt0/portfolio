@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { useRouter } from 'next/router';
 import styles from '../../../styles/Home.module.scss';
 import { DynamicText } from '../DynamicText';
 import Image from 'next/image';
@@ -10,6 +11,9 @@ import { useInView } from 'react-intersection-observer';
 export const IntroSection = () => {
   const controls = useAnimation();
   const { ref, inView } = useInView();
+  const router = useRouter();
+  const h1Text = router.locale === 'en' ? 'Frontend Developer with React' : 'Desarrolladora Frontend con React';
+  const pText = router.locale === 'en' ? 'Knowledge of ' : 'Conocimientos de ';
 
   useEffect(() => {
     if (inView) {
@@ -47,8 +51,8 @@ export const IntroSection = () => {
           ref={ ref }
         >
           <h2>Sarah Schmidt</h2>
-          <h1>Desarrolladora Frontend con React</h1>
-          <p>Conocimientos de <DynamicText /></p>
+          <h1>{ h1Text }</h1>
+          <p>{ pText } <DynamicText /></p>
           <ContinueArrow colorHash="#9B51E0" />
         </motion.div>
       </div>

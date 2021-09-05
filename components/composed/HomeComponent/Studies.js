@@ -1,14 +1,17 @@
 import { useEffect } from 'react';
-import { curriculumInfo } from '../../../assets/utils/data';
+import { useRouter } from 'next/router';
+import { curriculumInfo, curriculumInfoEnglish } from '../../../assets/utils/data';
 import styles from '../../../styles/Home.module.scss';
 import { motion, useAnimation } from "framer-motion";
 import { fadeInUp } from '../../../assets/animations/animations';
 import { useInView } from 'react-intersection-observer';
 
 export const Studies = () => {
-  const studies = curriculumInfo[1].studies;
   const controls = useAnimation();
   const { ref, inView } = useInView();
+  const router = useRouter();
+  const title = router.locale === 'en' ? 'Academic experience and courses' : 'Formación y cursos';
+  const studies = router.locale === 'en' ? curriculumInfoEnglish[1].studies : curriculumInfo[1].studies;
 
   useEffect(() => {
     if (inView) {
@@ -27,7 +30,7 @@ export const Studies = () => {
       variants={ fadeInUp }
       ref={ ref }
     >
-      <h3>Formación y cursos</h3>
+      <h3>{ title }</h3>
       <ul>
         {
           studies.map(study => {

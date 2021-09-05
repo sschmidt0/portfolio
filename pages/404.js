@@ -1,11 +1,18 @@
+import { useRouter } from 'next/router';
 import styles from '../styles/NotFound.module.scss';
 import Link from 'next/link';
 
-const NotFound = () => (
-  <div className={ styles.notFoundContainer }>
-    <p>Ooops.... no se ha podido encontrar la página que buscas</p>
-    <Link href="/"><a>Haz click aquí para volver al portafolio</a></Link>
-  </div>
-);
+const NotFound = () => {
+  const router = useRouter();
+  const text = router.locale === 'en' ? 'the page you are looking for could not be found' : 'no se ha podido encontrar la página que buscas';
+  const linkText = router.locale === 'en' ? 'Click here to go back to the portfolio' : 'Haz click aquí para volver al portafolio';
+
+  return (
+    <div className={ styles.notFoundContainer }>
+      <p>Ooops.... {text}</p>
+      <Link href="/"><a>{ linkText }</a></Link>
+    </div>
+  );
+};
 
 export default NotFound;
