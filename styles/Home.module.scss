@@ -35,7 +35,7 @@
 ******************/
 
 .articleIntro {
-  // height: calc(100vh - 80px);
+  height: calc(100vh - 80px);
   margin-top: 32px;
   overflow-x: hidden;
 }
@@ -289,8 +289,15 @@ CV SECTION
     list-style-type: none;
 
     h4 {
+      margin-left: 0;
       margin-bottom: 5px;
       font-size: 17px;
+    }
+
+    ul:last-child {
+      li {
+        margin-left: 10px;
+      }
     }
   }
 }
