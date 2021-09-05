@@ -35,19 +35,23 @@
 ******************/
 
 .articleIntro {
-  height: calc(100vh - 80px);
+  // height: calc(100vh - 80px);
   margin-top: 32px;
+  overflow-x: hidden;
 }
 
 
 .introContainer {
   display: flex;
   flex-direction: column;
-  max-width: 960px;
-  margin: 0 auto;
+  width: 100%;
 
   @media (min-width: 600px) {
     flex-direction: row;
+  }
+  @media (min-width: 960px) {
+    width: 960px;
+    margin: 0 auto;
   }
 
   div {
@@ -219,14 +223,10 @@ CV SECTION
 }
 
 .languageContainer {
-  // width: 100%;
   padding: 30px;
   color: #fff;
   background-color: #9B51E0;
   border-radius: 10px;
-  // @media (min-width: 768px) {
-  //   width: 48%;
-  // }
 
   h3 {
     font-size: 18px;
@@ -273,14 +273,10 @@ CV SECTION
 }
 
 .studiesExperienceContainer {
-  // width: 100%;
   margin-bottom: 40px;
   padding: 30px;
   border-radius: 10px;
   border: 1px solid #9B51E0;
-  // @media (min-width: 768px) {
-  //   width: 48%;
-  // }
 
   h3 {
     font-size: 18px;
