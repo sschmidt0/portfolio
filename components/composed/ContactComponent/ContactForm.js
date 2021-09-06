@@ -7,6 +7,7 @@ import { validateInput } from '../../../assets/utils/validateInput';
 import { sendFormData } from '../../../assets/utils/sendFormData';
 import styles from '../../../styles/Contacto.module.scss';
 import { motion } from 'framer-motion';
+import * as gtag from '../../../lib/gtag';
 
 require('dotenv').config();
 const formURL = process.env.NEXT_PUBLIC_FORM_URL;
@@ -56,6 +57,12 @@ export const ContactForm = () => {
         setMessage('');
       }, 3000);
     }
+
+    gtag.event({
+      action: 'Send message',
+      category: 'Contact',
+      label: 'Message',
+    });
   }
 
   return (

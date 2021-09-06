@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { useRouter } from 'next/router';
 import styles from '../../../styles/Portfolio.module.scss';
 import { BsCodeSlash } from 'react-icons/bs';
 import Image from 'next/image';
@@ -11,8 +12,10 @@ import { List } from './List';
 import { motion, useAnimation } from 'framer-motion';
 import { fadeInUp } from '../../../assets/animations/animations';
 import { useInView } from 'react-intersection-observer';
+import * as gtag from '../../../lib/gtag';
 
 export const PortfolioItem = ({ project }) => {
+  const router = useRouter();
   const {
     title,
     extraInfo,
@@ -27,8 +30,15 @@ export const PortfolioItem = ({ project }) => {
   } = project;
   const controls = useAnimation();
   const { ref, inView } = useInView();
+  const tecTitle = router.locale === 'en' ? 'Tecnology used' : 'Tecnologías utilizadas';
+  const buttonTitle = router.locale === 'en' ? 'See code' : 'Ver código';
 
   const handleClick = (target) => {
+    gtag.event({
+      action: target,
+      category: 'portfolio',
+      label: target,
+    });
     target !== undefined && window.open (target, '_ blank');
   };
 
@@ -67,7 +77,7 @@ export const PortfolioItem = ({ project }) => {
               { extraInfo ? <h2>{ title }<span>{ extraInfo }</span></h2> : <h2>{ title }</h2> }
               <h4>{ subtitle }</h4>
               <List listArray={ information } />
-              <h4>Tecnologías utilizadas</h4>
+              <h4>{ tecTitle }</h4>
               <List listArray={ tecnologies } />
             </CardContent>
           </CardActionArea>
@@ -102,7 +112,7 @@ export const PortfolioItem = ({ project }) => {
                   startIcon={<BsCodeSlash />}
                   onClick={ () => handleClick(linkGithub[0]) }
                 >
-                  Ver código
+                  { buttonTitle }
                 </Button>
             }
           </CardActions>

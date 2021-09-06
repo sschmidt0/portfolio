@@ -1,6 +1,6 @@
 export const about = {
   text: `Con un máster universitario en Aplicaciones Multimedia de la UOC y un certificado de Frontend con React de la IT Academy del Cibernàrium. Con sólidos conocimientos en React, Nextjs, Redux, JavaScript ES6, HTML5 y CSS3. Conocimientos también en NodeJs, Express, MongoDB y la creación de una API REST. Desarrollo de una aplicación web progresiva con el fullstack MERN como trabajo final de máster. Busco adquirir experiencia laboral como desarrolladora frontend con React.`,
-  textEnglish: `Con un máster universitario en Aplicaciones Multimedia de la UOC y un certificado de Frontend con React de la IT Academy del Cibernàrium. Con sólidos conocimientos en React, Nextjs, Redux, JavaScript ES6, HTML5 y CSS3. Conocimientos también en NodeJs, Express, MongoDB y la creación de una API REST. Desarrollo de una aplicación web progresiva con el fullstack MERN como trabajo final de máster. Busco adquirir experiencia laboral como desarrolladora frontend con React.`,
+  textEnglish: `With a university master's degree in Multimedia Applications from the UOC and a Frontend with React certificate from the IT Academy of the Cibernàrium. With solid knowledge in React, Nextjs, Redux, JavaScript ES6, HTML5 and CSS3. Knowledge also in NodeJs, Express, MongoDB and the creation of a REST API. Development of a progressive web application with the fullstack MERN as the final master's degree project. I am looking to gain work experience as a frontend developer with React.`,
 };
 
 export const curriculumInfo = [
@@ -136,12 +136,12 @@ export const curriculumInfoEnglish = [
         companies: [
           {
             name: 'M47 Labs',
-            years: '2019 - actualidad',
+            years: '2019 - now',
           }
         ],
         description: [
-          'Responsabilidad principal: centrarse en los aspectos internacionales de un software de asistente de voz',
-          'Interacción con el equipo de pruebas internacionales e ingenieros para ayudar a reproducir problemas y probar características',
+          'Main responsibility: focus on the international aspects of a voice assistant software',
+          'Interaction with the international test team and engineers to help reproduce problems and test features',
         ]
       },
       {
@@ -162,10 +162,10 @@ export const curriculumInfoEnglish = [
           }
         ],
         description: [
-          'Diseño e impartición de formación',
-          'Desarrollo de recursos didácticos',
-          'Atención y asesoramiento al cliente online y presencial',
-          'Análisis de material y mejora en los procedimientos internos',
+          'Design and implementation of teaching',
+          'Development of teaching resources',
+          'Customer service and advice online and in person',
+          'Analysis of material and improvement in internal procedures',
         ]
       },
     ]
@@ -176,20 +176,20 @@ export const curriculumInfoEnglish = [
         id: 1,
         center: 'Universitat Oberta de Catalunya',
         years: '2018 - 2021',
-        title: 'Máster universitario en Aplicaciones Multimedia',
+        title: "Master's degree in Multimedia Applications",
         description: [
           'MERN: MongoDB, Express, React, Nodejs',
           'HTML5, CSS3, Sass, ITCSS, BEM, Bootstrap',
           'JavaScript ES6, jQuery',
-          'MySQL, PHP (básico)',
+          'MySQL, PHP (basics)',
           'Wordpress',
-          'Aplicación web progresiva (PWA)',
-          'Creación de una API REST',
-          'Diseño de interfaces interactivas',
-          'Analítica web: estrategias de SEO',
-          'Accesibilidad Web',
-          'Metodologías ágiles, SCRUM',
-          'Proyecto final: aplicación web progresiva con el fullstack MERN',
+          'Progressive Web App (PWA)',
+          'Creation of a REST API',
+          'Interactive interface design',
+          'Web analytics: SEO strategies',
+          'Web accessibility',
+          'Agile methodologies, SCRUM',
+          'Final project: progressive web application with the MERN fullstack',
         ]
       },
       {
@@ -202,7 +202,7 @@ export const curriculumInfoEnglish = [
           'JavaScript ES6',
           'DevTools',
           'Git',
-          'API REST',
+          'REST API',
           'React',
           'Testing',
         ]
@@ -213,38 +213,38 @@ export const curriculumInfoEnglish = [
         years: '2020',
         title: 'Introduction to Web accessibility',
         description: [
-          '¿Qué es la accesibilidad web?',
-          'Personas y tecnología digital',
-          'Casos de negocio y beneficios',
-          'Principios, estándares y comprobaciones',
-          'Introducción a la accesibilidad en una empresa'
+          'What is Web Accessibility',
+          'People and Digital Technology',
+          'Business Cases and Benefits',
+          'Principles, Standards and Checks',
+          'Getting Started with Accessibility in the Organization'
         ]
       },
       {
         id: 4,
         center: 'Universitat Autònoma de Barcelona',
         years: '2009 - 2013',
-        title: 'Doctorado en Filología Española',
+        title: 'PhD in Spanish Philology',
         description: [
-          'Próxemica y comunicación intercultural: la comunicación no verbal en la enseñanza de E/LE'
+          'Proxemics and intercultural communication: non-verbal communication in the teaching of Spanish as a Foreign Language'
         ]
       },
       {
         id: 5,
         center: 'Universitat Autònoma de Barcelona',
         years: '2008 - 2009',
-        title: 'Máster universitari en TICOM',
+        title: "Master's degree in TICOM",
         description: [
-          'Tratamiento de la información y comunicación multilingüe'
+          'Information processing and multilingual communication'
         ]
       },
       {
         id: 6,
         center: 'Universität Duisburg-Essen (Alemania)',
         years: '2004 - 2008',
-        title: 'Filología Inglesa y Filología Española',
+        title: 'English Philology and Spanish Philology',
         description: [
-          'Lingüística, literatura y didáctica'
+          'Linguistics, literature and didactics'
         ]
       },
     ],
@@ -327,7 +327,7 @@ export const projects = [
     imageTitle: 'Captura de pantalla de entrenem',
     linkSite: 'https://www.entrenem.com',
     linkGithub: ['https://github.com/sschmidt0/entrenem_frontend', 'https://github.com/sschmidt0/entrenem_backend'],
-    information: ['Aplicación web progresiva con el fullstack MERN (MongoDb, Express, React, Nodejs)', 'Plataforma colaborativa orientada a la búsqueda y oferta de actividades deportivas de diferentes categorías', 'Funcionalidades básicas CRUD', 'Autenticación del usuario, Creación API REST'],
+    information: ['Aplicación web progresiva con el fullstack MERN (MongoDb, Express, React, Nodejs)', 'Plataforma colaborativa orientada a la búsqueda y oferta de actividades deportivas de diferentes categorías', 'Funcionalidades básicas CRUD', 'Autenticación del usuario', 'Creación API REST'],
     tecnologies: ['React', 'Redux', 'Nodejs', 'Express', 'MongoDB', 'Material UI'],
   },
   {
@@ -338,7 +338,7 @@ export const projects = [
     imageTitle: 'Captura de pantalla de Reactube',
     linkSite: 'https://reactube-proyecto.netlify.app',
     linkGithub: ['https://github.com/sschmidt0/Reactube'],
-    information: ['Clone de Youtube', 'Uso de la API de YouTube', 'Dashboard con buscador de vídeos, Listado de vídeos recomendados, Historial de búsqueda de términos, vídeos favoritos.', 'React Context'],
+    information: ['Clone de Youtube', 'Uso de la API de YouTube', 'Dashboard con buscador de vídeos, listado de vídeos recomendados, historial de búsqueda de términos, vídeos favoritos', 'React Context'],
     tecnologies: ['React', 'Material UI'],
   },
   {
@@ -367,44 +367,45 @@ export const projectsEnglish = [
   {
     index: 1,
     title: 'entrenem',
-    extraInfo: ' (en proceso de mejora)',
-    subtitle: 'Proyecto final del Máster Universitario en Aplicaciones Multimedia',
+    extraInfo: ' (in process of improvement)',
+    subtitle: "Final project of the Master's Degree in Multimedia Applications",
     image: 'entrenem.png',
-    imageTitle: 'Captura de pantalla de entrenem',
+    imageTitle: 'Screenshot of entrenem application',
     linkSite: 'https://www.entrenem.com',
     linkGithub: ['https://github.com/sschmidt0/entrenem_frontend', 'https://github.com/sschmidt0/entrenem_backend'],
-    information: ['Aplicación web progresiva con el fullstack MERN (MongoDb, Express, React, Nodejs)', 'Plataforma colaborativa orientada a la búsqueda y oferta de actividades deportivas de diferentes categorías', 'Funcionalidades básicas CRUD', 'Autenticación del usuario, Creación API REST'],
+    information: ['Progressive web application with MERN fullstack (MongoDb, Express, React, Nodejs)', 'Collaborative platform oriented to the search and offer of sports activities of different categories', 'Basic CRUD functionalities', 'User authentication', 'Creation of REST API'],
     tecnologies: ['React', 'Redux', 'Nodejs', 'Express', 'MongoDB', 'Material UI'],
   },
   {
     index: 2,
     title: 'Reactube',
-    subtitle: 'Proyecto final del módulo React de la IT Academy',
+    subtitle: 'Final project of the React module of the IT Academy',
     image: 'reactube.png',
-    imageTitle: 'Captura de pantalla de Reactube',
+    imageTitle: 'Screenshot of Reactube application',
     linkSite: 'https://reactube-proyecto.netlify.app',
     linkGithub: ['https://github.com/sschmidt0/Reactube'],
-    information: ['Clone de Youtube', 'Uso de la API de YouTube', 'Dashboard con buscador de vídeos, Listado de vídeos recomendados, Historial de búsqueda de términos, vídeos favoritos.', 'React Context'],
+    information: ['Youtube clone', 'Usage of the YouTube API', 'Dashboard with video searching, list of recommended videos, search history for terms, favorite videos', 'React Context'],
     tecnologies: ['React', 'Material UI'],
   },
   {
     index: 3,
-    title: 'Portfolioooo',
-    subtitle: 'Portafolio con el CV de la autora y proyectos suyos',
+    title: 'Portfolio',
+    subtitle: "Portfolio with the author's CV and her projects",
     image: 'portfolio.png',
+    imageTitle: 'Screenshot of Portfolio',
     linkSite: 'https://portfolio-sarah-schmidt-portfolio.vercel.app',
     linkGithub: ['https://github.com/sschmidt0/portfolio'],
-    information: ['Framer Motion', 'Formulario funcional'],
+    information: ['Framer Motion', 'Functional form'],
     tecnologies: ['React', 'Nextjs', 'Material UI'],
   },
   {
     index: 4,
     title: 'Lazy Loading Images',
-    subtitle: 'Prueba técnica final de la IT Academy',
+    subtitle: 'IT Academy final technical test',
     image: 'lazy-loading.png',
-    imageTitle: 'Captura de pantalla del proyecto de lazy loading',
+    imageTitle: 'Screenshot of lazy loading project',
     linkGithub: ['https://github.com/sschmidt0/dynamically-loading-images'],
-    information: ['Imágenes que se cargan dinámicamente a medida que el usuario se vaya desplazando hacia abajo en el navedor', 'Intersection Observer'],
+    information: ['Images that load dynamically as the user scrolls down the browser window', 'Intersection Observer'],
     tecnologies: ['React'],
   },
 ];
