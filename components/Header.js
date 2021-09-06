@@ -11,6 +11,10 @@ export const Header = () => {
   const text = router.locale === 'en' ? 'Spanish' : 'Inglés';
   const [open, setOpen] = useState(false);
 
+  const handleClick = () => {
+    console.log(e);
+  };
+
   return (
     <ClickAwayListener onClickAway={ () => setOpen(false) }>
       <header className="header">
@@ -21,7 +25,7 @@ export const Header = () => {
             </Link>
           </h3>
           <div>
-            <Link href={ href }>
+            <Link href={ href } onClick={ (e) => handleClick(e) }>
               <a>{ text }</a>
             </Link>
             { open ? <CloseButton setOpen={ setOpen } /> : <OpenButton setOpen={ setOpen } /> }

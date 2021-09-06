@@ -8,6 +8,8 @@ export default class MyDocument extends Document {
     return (
       <Html lang="es">
         <Head>
+          <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+          <meta name="description" content="Portafolio de Sarah Schmidt, desarrolladora frontend con React" />
           {/* Global Site Tag (gtag.js) - Google Analytics */}
           <script
             async
