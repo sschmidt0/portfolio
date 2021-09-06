@@ -5,6 +5,7 @@ import { ContactInfo } from '../components/composed/ContactComponent/ContactInfo
 import { Footer } from '../components/Footer';
 import { motion } from 'framer-motion';
 import { fadeInUp, zoomIn, stagger } from '../assets/animations/animations';
+import { SiteLinks } from '../components/composed/SiteLinks';
 
 const Contacto = () => {
   const router = useRouter();
@@ -28,6 +29,7 @@ const Contacto = () => {
         <motion.div variants={ fadeInUp }>
           <ContactInfo />
         </motion.div>
+        <SiteLinks site="contact" />
         <Footer />
       </motion.section>
     </>

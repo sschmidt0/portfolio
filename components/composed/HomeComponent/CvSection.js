@@ -7,6 +7,7 @@ import { Languages } from './Languages';
 import { motion, useAnimation } from "framer-motion";
 import { fadeInUp } from '../../../assets/animations/animations';
 import { useInView } from 'react-intersection-observer';
+import { SiteLinks } from '../SiteLinks';
 
 export const CvSection = () => {
   const controls = useAnimation();
@@ -39,6 +40,7 @@ export const CvSection = () => {
           <Languages />
         </motion.div>
       </div>
+      <SiteLinks site="intro" />
     </article>
   );
 };
