@@ -24,7 +24,7 @@ export const AboutSection = () => {
   }, [controls, inView]);
 
   return (
-    <article className={ styles.articleAbout }>
+    <article className={ styles.articleAbout } id="about">
       <div>
         <h2>{ title }</h2>
         <motion.p
@@ -35,7 +35,7 @@ export const AboutSection = () => {
         >
           { text }
         </motion.p>
-        <ContinueArrow />
+        <ContinueArrow link="cv" />
       </div>
     </article>
   );

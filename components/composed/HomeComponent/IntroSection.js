@@ -53,7 +53,7 @@ export const IntroSection = () => {
           <h2>Sarah Schmidt</h2>
           <h1>{ h1Text }</h1>
           <p>{ pText } <DynamicText /></p>
-          <ContinueArrow colorHash="#9B51E0" />
+          <ContinueArrow colorHash="#9B51E0" link="about" />
         </motion.div>
       </div>
     </motion.article>

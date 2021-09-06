@@ -21,6 +21,17 @@ export const fadeInUp = {
   }
 };
 
+export const moveUpDown = {
+  initial: {
+    y: 8,
+    transition: { ease: easing, duration: 0.5, repeat: Infinity }
+  },
+  animate: {
+    y: 0,
+    transition: { ease: easing, duration: 0.5, repeat: Infinity }
+  }
+};
+
 export const fadeInLeft = {
   initial: {
     x: 60,

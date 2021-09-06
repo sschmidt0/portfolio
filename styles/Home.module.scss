@@ -16,14 +16,6 @@
 
   svg {
     font-size: 70px;
-    -webkit-animation: move 0.5s infinite;
-    -moz-animation: move 0.5s infinite;
-    animation: move 0.5s infinite;
-    animation-direction: alternate;
-
-    @keyframes move { 100% { top: 7px; }}
-    @-webkit-keyframes move { 100% { top: 7px; }}
-    @-moz-keyframes move { 100% { top: 7px; }}
   }
 }
 

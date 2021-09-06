@@ -24,7 +24,7 @@ export const CvSection = () => {
   }, [controls, inView]);
 
   return (
-    <article className={ styles.articleCV }>
+    <article className={ styles.articleCV } id="cv">
       <h2>{ title }</h2>
       <div className={ styles.cvContainer }>
         <Studies />

@@ -2,10 +2,10 @@ import { useEffect } from 'react';
 import styles from '../../styles/Home.module.scss';
 import { MdExpandMore } from 'react-icons/md';
 import { motion, useAnimation } from "framer-motion";
-import { fadeInUp } from '../../assets/animations/animations';
+import { fadeInUp, moveUpDown } from '../../assets/animations/animations';
 import { useInView } from 'react-intersection-observer';
 
-export const ContinueArrow = ({ colorHash }) => {
+export const ContinueArrow = ({ colorHash, link }) => {
   const controls = useAnimation();
   const { ref, inView } = useInView();
 
@@ -24,10 +24,12 @@ export const ContinueArrow = ({ colorHash }) => {
       style={{ color: `${ colorHash }` }}
       initial="initial"
       animate={ controls }
-      variants={ fadeInUp }
+      variants={ moveUpDown }
       ref={ ref }
     >
-      <MdExpandMore />
+      <a href={ `#${link}` }>
+        <MdExpandMore />
+      </a>
     </motion.p>
   )
 };
