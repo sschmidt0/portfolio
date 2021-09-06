@@ -1,6 +1,6 @@
 export const about = {
-  text: `Con un máster universitario en Aplicaciones Multimedia de la UOC y un certificado de Frontend con React de la IT Academy del Cibernàrium. Con sólidos conocimientos en React, Nextjs, Redux, JavaScript ES6, HTML5 y CSS3. Conocimientos también en NodeJs, Express, MongoDB y la creación de una API REST. Desarrollo de una aplicación web progresiva con el fullstack MERN como trabajo final de máster. Busco adquirir experiencia laboral como desarrolladora frontend con React.`,
-  textEnglish: `With a university master's degree in Multimedia Applications from the UOC and a Frontend with React certificate from the IT Academy of the Cibernàrium. With solid knowledge in React, Nextjs, Redux, JavaScript ES6, HTML5 and CSS3. Knowledge also in NodeJs, Express, MongoDB and the creation of a REST API. Development of a progressive web application with the fullstack MERN as the final master's degree project. I am looking to gain work experience as a frontend developer with React.`,
+  text: `Tengo un máster universitario en Aplicaciones Multimedia de la Universitat Oberta de Catalunya y un certificado de Frontend con React de la IT Academy del Cibernàrium. Tengo sólidos conocimientos de React, Nextjs, Redux, JavaScript ES6, HTML5 y CSS3. También tengo conocimientos de NodeJs, Express, MongoDB y la creación de una API REST. Para mi proyecto final de máster desarrollé una aplicación web progresiva con el fullstack MERN. Busco adquirir experiencia laboral como desarrolladora frontend con React.`,
+  textEnglish: `I have a Master's degree in Multimedia Applications from the Universitat Oberta de Catalunya and a certificate for Frontend with React from the IT Academy of the Cibernàrium. I have expertise in React, Nextjs, Redux, JavaScript ES6, HTML5 and CSS3. I'm also knowledgeable in NodeJs, Express, MongoDB and the creation of a REST API. For my Master's degree project I have developed a progressive web application with the fullstack MERN. I am looking to gain work experience as a frontend developer with React.`,
 };
 
 export const curriculumInfo = [
@@ -41,7 +41,8 @@ export const curriculumInfo = [
           'Diseño e impartición de formación',
           'Desarrollo de recursos didácticos',
           'Atención y asesoramiento al cliente online y presencial',
-          'Análisis de material y mejora en los procedimientos internos',
+          'Análisis de materiales',
+          'Mejora de los flujos de trabajo para los procedimientos internos',
         ]
       },
     ]
@@ -93,7 +94,7 @@ export const curriculumInfo = [
           'Personas y tecnología digital',
           'Casos de negocio y beneficios',
           'Principios, estándares y comprobaciones',
-          'Introducción a la accesibilidad en una empresa'
+          'Introducción a la accesibilidad en empresas'
         ]
       },
       {
@@ -132,7 +133,7 @@ export const curriculumInfoEnglish = [
     work: [
       {
         id: 1,
-        title: 'Data Modeler',
+        title: 'Data Modeller',
         companies: [
           {
             name: 'M47 Labs',
@@ -165,7 +166,8 @@ export const curriculumInfoEnglish = [
           'Design and implementation of teaching',
           'Development of teaching resources',
           'Customer service and advice online and in person',
-          'Analysis of material and improvement in internal procedures',
+          'Analysis of materials',
+          'Improving workflows for internal procedures',
         ]
       },
     ]
@@ -189,7 +191,7 @@ export const curriculumInfoEnglish = [
           'Web analytics: SEO strategies',
           'Web accessibility',
           'Agile methodologies, SCRUM',
-          'Final project: progressive web application with the MERN fullstack',
+          'Final project: progressive web application with MERN fullstack',
         ]
       },
       {
@@ -217,7 +219,7 @@ export const curriculumInfoEnglish = [
           'People and Digital Technology',
           'Business Cases and Benefits',
           'Principles, Standards and Checks',
-          'Getting Started with Accessibility in the Organization'
+          'Getting Started with Accessibility in Organizations'
         ]
       },
       {

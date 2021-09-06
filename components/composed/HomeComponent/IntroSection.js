@@ -13,7 +13,7 @@ export const IntroSection = () => {
   const { ref, inView } = useInView();
   const router = useRouter();
   const h1Text = router.locale === 'en' ? 'Frontend Developer with React' : 'Desarrolladora Frontend con React';
-  const pText = router.locale === 'en' ? 'Knowledge of ' : 'Conocimientos de ';
+  const pText = router.locale === 'en' ? 'Expertise in ' : 'Conocimientos de ';
 
   useEffect(() => {
     if (inView) {
