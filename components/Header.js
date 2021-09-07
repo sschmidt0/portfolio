@@ -7,25 +7,21 @@ import ClickAwayListener from 'react-click-away-listener';
 
 export const Header = () => {
   const router = useRouter();
-  const href = router.locale === 'en' ? '/' : '/en';
-  const text = router.locale === 'en' ? 'Spanish' : 'Inglés';
+  const href = router.locale === 'en' ? '/es' : '/en';
+  const text = router.locale === 'en' ? 'Español' : 'English';
   const [open, setOpen] = useState(false);
-
-  const handleClick = () => {
-    console.log(e);
-  };
 
   return (
     <ClickAwayListener onClickAway={ () => setOpen(false) }>
       <header className="header">
         <div>
           <h3>
-            <Link href="/">
+            <Link href={ href }>
               <a>Sarah Schmidt</a>
             </Link>
           </h3>
           <div>
-            <Link href={ href } onClick={ (e) => handleClick(e) }>
+            <Link href={ href }>
               <a>{ text }</a>
             </Link>
             { open ? <CloseButton setOpen={ setOpen } /> : <OpenButton setOpen={ setOpen } /> }
