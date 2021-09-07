@@ -128,9 +128,12 @@ footer {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  width: 400px;
   height: 50px;
   margin: 20px auto 0;
   color: #6820ad;
   font-weight: 800;
+
+  @media (min-width: 600px) {
+    width: 400px;
+  }
 }
