@@ -66,6 +66,7 @@ export const curriculumInfo = [
           'Analítica web: estrategias de SEO',
           'Accesibilidad Web',
           'Metodologías ágiles, SCRUM',
+          'Gulp',
           'Proyecto final: aplicación web progresiva con el fullstack MERN',
         ]
       },

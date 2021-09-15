@@ -42,6 +42,7 @@ export const IntroSection = () => {
             src="/sarah-perfil.png"
             layout="fill"
             alt="Foto de perfil de Sarah Schmidt"
+            priority
           />
         </motion.div>
         <motion.div
