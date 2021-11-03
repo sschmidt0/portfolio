@@ -335,6 +335,16 @@ export const projects = [
   },
   {
     index: 2,
+    title: 'Skyscanner',
+    subtitle: 'Clon de Skyscanner',
+    image: 'skyscanner.png',
+    imageTitle: 'Captura de pantalla del clone de Skyscanner',
+    linkGithub: ['https://github.com/sschmidt0/skyscanner.git'],
+    information: ['Clone de Skyscanner', 'Uso de la API de la empresa de Fifthbeat', 'Formulario de búsqueda funcional'],
+    tecnologies: ['React'],
+  },
+  {
+    index: 3,
     title: 'Reactube',
     subtitle: 'Proyecto final del módulo React de la IT Academy',
     image: 'reactube.png',
@@ -345,7 +355,7 @@ export const projects = [
     tecnologies: ['React', 'Material UI'],
   },
   {
-    index: 3,
+    index: 4,
     title: 'Portafolio',
     subtitle: 'Portafolio con el CV de la autora y proyectos suyos',
     image: 'portfolio.png',
@@ -355,7 +365,7 @@ export const projects = [
     tecnologies: ['React', 'Nextjs', 'Material UI'],
   },
   {
-    index: 4,
+    index: 5,
     title: 'Lazy Loading Images',
     subtitle: 'Prueba técnica final de la IT Academy',
     image: 'lazy-loading.png',
@@ -381,6 +391,16 @@ export const projectsEnglish = [
   },
   {
     index: 2,
+    title: 'Skyscanner',
+    subtitle: 'Skyscanner clone',
+    image: 'skyscanner.png',
+    imageTitle: 'Screenshot of the Skyscanner clone app',
+    linkGithub: ['https://github.com/sschmidt0/skyscanner.git'],
+    information: ['Skyscanner clone', 'Usage of the Fifthbeat Company API', 'Functional search form'],
+    tecnologies: ['React'],
+  },
+  {
+    index: 3,
     title: 'Reactube',
     subtitle: 'Final project of the React module of the IT Academy',
     image: 'reactube.png',
@@ -391,7 +411,7 @@ export const projectsEnglish = [
     tecnologies: ['React', 'Material UI'],
   },
   {
-    index: 3,
+    index: 4,
     title: 'Portfolio',
     subtitle: "Portfolio with the author's CV and her projects",
     image: 'portfolio.png',
@@ -402,7 +422,7 @@ export const projectsEnglish = [
     tecnologies: ['React', 'Nextjs', 'Material UI'],
   },
   {
-    index: 4,
+    index: 5,
     title: 'Lazy Loading Images',
     subtitle: 'IT Academy final technical test',
     image: 'lazy-loading.png',
