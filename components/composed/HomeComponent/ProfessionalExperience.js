@@ -30,7 +30,7 @@ export const ProfessionalExperience = () => {
                 </ul>
                 <ul className={ styles.descriptionList }>
                   {
-                    workItem.description.map((descriptionItem, index) => {
+                    workItem.description.length > 0 && workItem.description.map((descriptionItem, index) => {
                       return (
                         <li key={ index }>{ descriptionItem }</li>
                       )

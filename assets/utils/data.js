@@ -1,6 +1,6 @@
 export const about = {
-  text: `Tengo un máster universitario en Aplicaciones Multimedia de la Universitat Oberta de Catalunya y un certificado de Frontend con React de la IT Academy del Cibernàrium. Tengo sólidos conocimientos de React, Nextjs, Redux, JavaScript ES6, HTML5 y CSS3. También tengo conocimientos de NodeJs, Express, MongoDB y la creación de una API REST. Para mi proyecto final de máster desarrollé una aplicación web progresiva con el fullstack MERN. Busco adquirir experiencia laboral como desarrolladora frontend con React.`,
-  textEnglish: `I have a Master's degree in Multimedia Applications from the Universitat Oberta de Catalunya and a certificate for Frontend with React from the IT Academy of the Cibernàrium. I have expertise in React, Nextjs, Redux, JavaScript ES6, HTML5 and CSS3. I'm also knowledgeable in NodeJs, Express, MongoDB and the creation of a REST API. For my Master's degree project I have developed a progressive web application with the fullstack MERN. I am looking to gain work experience as a frontend developer with React.`,
+  text: `Con un máster en Aplicaciones Multimedia y un certificado de Frontend con React. Con sólidos conocimientos en React, Nextjs, Redux, JavaScript ES6, HTML5 y CSS3. Con conocimientos también en Node.js, Express, MongoDB y la creación de una API REST. Actualmente busco aplicar mis conocimientos de desarrolladora Frontend con React.`,
+  textEnglish: `With a master's degree in Multimedia Applications and a Frontend certificate with React. With solid knowledge in React, Nextjs, Redux, JavaScript ES6, HTML5 and CSS3. Knowledgeable also in Node.js, Express, MongoDB and the creation of a REST API. I am currently looking to apply my knowledge as a Frontend developer with React.`,
 };
 
 export const curriculumInfo = [
@@ -16,8 +16,9 @@ export const curriculumInfo = [
           }
         ],
         description: [
-          'Responsabilidad principal: centrarse en los aspectos internacionales de un software de asistente de voz',
-          'Interacción con el equipo de pruebas internacionales e ingenieros para ayudar a reproducir problemas y probar características',
+          'Contribuir a la creación de sistemas aplicados a la IA.',
+          'Análisis del modelo de aprendizaje para proponer mejoras.',
+          'Interacción con el equipo de pruebas internacionales e ingenieros para ayudar a reproducir problemas y testear características.'
         ]
       },
       {
@@ -28,22 +29,8 @@ export const curriculumInfo = [
             name: 'Universitat de Barcelona',
             years: '2013 - 2019'
           },
-          {
-            name: 'Universitat Oberta de Catalunya',
-            years: '2017 - 2018'
-          },
-          {
-            name:'ESCI-UPF',
-            years: '2014-2017'
-          }
         ],
-        description: [
-          'Diseño e impartición de formación',
-          'Desarrollo de recursos didácticos',
-          'Atención y asesoramiento al cliente online y presencial',
-          'Análisis de materiales',
-          'Mejora de los flujos de trabajo para los procedimientos internos',
-        ]
+        description: []
       },
     ]
   },
@@ -102,25 +89,7 @@ export const curriculumInfo = [
         id: 4,
         center: 'Universitat Autònoma de Barcelona',
         years: '2009 - 2013',
-        title: 'Doctorado en Filología Española',
-        description: [
-          'Próxemica y comunicación intercultural: la comunicación no verbal en la enseñanza de E/LE'
-        ]
-      },
-      {
-        id: 5,
-        center: 'Universitat Autònoma de Barcelona',
-        years: '2008 - 2009',
-        title: 'Máster universitari en TICOM',
-        description: [
-          'Tratamiento de la información y comunicación multilingüe'
-        ]
-      },
-      {
-        id: 6,
-        center: 'Universität Duisburg-Essen (Alemania)',
-        years: '2004 - 2008',
-        title: 'Filología Inglesa y Filología Española',
+        title: 'Filología Inglesa y Española',
         description: [
           'Lingüística, literatura y didáctica'
         ]
@@ -142,8 +111,9 @@ export const curriculumInfoEnglish = [
           }
         ],
         description: [
-          'Main responsibility: focus on the international aspects of a voice assistant software',
-          'Interaction with the international test team and engineers to help reproduce problems and test features',
+          'Contribute to the creation of systems applied to AI.',
+          'Analyze the learning model to propose improvements.',
+          'Interact with the international test team and engineers to help reproduce problems and test features.',
         ]
       },
       {
@@ -154,22 +124,8 @@ export const curriculumInfoEnglish = [
             name: 'Universitat de Barcelona',
             years: '2013 - 2019'
           },
-          {
-            name: 'Universitat Oberta de Catalunya',
-            years: '2017 - 2018'
-          },
-          {
-            name:'ESCI-UPF',
-            years: '2014-2017'
-          }
         ],
-        description: [
-          'Design and implementation of teaching',
-          'Development of teaching resources',
-          'Customer service and advice online and in person',
-          'Analysis of materials',
-          'Improving workflows for internal procedures',
-        ]
+        description: []
       },
     ]
   },
@@ -227,25 +183,7 @@ export const curriculumInfoEnglish = [
         id: 4,
         center: 'Universitat Autònoma de Barcelona',
         years: '2009 - 2013',
-        title: 'PhD in Spanish Philology',
-        description: [
-          'Proxemics and intercultural communication: non-verbal communication in the teaching of Spanish as a Foreign Language'
-        ]
-      },
-      {
-        id: 5,
-        center: 'Universitat Autònoma de Barcelona',
-        years: '2008 - 2009',
-        title: "Master's degree in TICOM",
-        description: [
-          'Information processing and multilingual communication'
-        ]
-      },
-      {
-        id: 6,
-        center: 'Universität Duisburg-Essen (Alemania)',
-        years: '2004 - 2008',
-        title: 'English Philology and Spanish Philology',
+        title: 'English and Spanish Philology',
         description: [
           'Linguistics, literature and didactics'
         ]
@@ -324,12 +262,12 @@ export const projects = [
   {
     index: 1,
     title: 'entrenem',
-    extraInfo: ' (en proceso de mejora)',
+    extraInfo: ' (código Frontend offline y en proceso de mejora)',
     subtitle: 'Proyecto final del Máster Universitario en Aplicaciones Multimedia',
     image: 'entrenem.png',
     imageTitle: 'Captura de pantalla de entrenem',
-    linkSite: 'https://www.entrenem.com',
-    linkGithub: ['https://github.com/sschmidt0/entrenem_frontend', 'https://github.com/sschmidt0/entrenem_backend'],
+    // linkSite: 'https://www.entrenem.com',
+    linkGithub: ['https://github.com/sschmidt0/entrenem_backend'],
     information: ['Aplicación web progresiva con el fullstack MERN (MongoDb, Express, React, Nodejs)', 'Plataforma colaborativa orientada a la búsqueda y oferta de actividades deportivas de diferentes categorías', 'Funcionalidades básicas CRUD', 'Autenticación del usuario', 'Creación API REST'],
     tecnologies: ['React', 'Redux', 'Nodejs', 'Express', 'MongoDB', 'Material UI'],
   },
@@ -380,12 +318,12 @@ export const projectsEnglish = [
   {
     index: 1,
     title: 'entrenem',
-    extraInfo: ' (in process of improvement)',
+    extraInfo: ' (Frontend code offline and in process of improvement)',
     subtitle: "Final project of the Master's Degree in Multimedia Applications",
     image: 'entrenem.png',
     imageTitle: 'Screenshot of entrenem application',
-    linkSite: 'https://www.entrenem.com',
-    linkGithub: ['https://github.com/sschmidt0/entrenem_frontend', 'https://github.com/sschmidt0/entrenem_backend'],
+    // linkSite: 'https://www.entrenem.com',
+    linkGithub: ['https://github.com/sschmidt0/entrenem_backend'],
     information: ['Progressive web application with MERN fullstack (MongoDb, Express, React, Nodejs)', 'Collaborative platform oriented to the search and offer of sports activities of different categories', 'Basic CRUD functionalities', 'User authentication', 'Creation of REST API'],
     tecnologies: ['React', 'Redux', 'Nodejs', 'Express', 'MongoDB', 'Material UI'],
   },
